@@ -1,27 +1,64 @@
-section {
-    background: tomato;
-    width: 600px;
-    height: 200px;
-    margin: auto;
-    padding-top: 30px;
+body {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-h1 {
+section {
+    position: relative;
+    width: 200%;
+    height: 200%;
+    padding-top: 30px;
+    border-radius: 5%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: solid .5px;
+    border-color: aliceblue;
+
+}
+
+header {
     display: flex;
     justify-content: center;
+
 }
 
 .input_field {
     display: flex;
-
+    padding-left: 25%;
+    flex-direction: column;
+    justify-items: center;
 }
 
 .form-control {
-    margin-right: 30%;
+    min-height: 1.5rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 300px;
 
 }
 
 .form-label {
-     margin-left: auto;
-    margin-right: 10px;
+    margin-top: 10px;
+
+}
+
+.btn_box {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+
+}
+
+.btn {
+    margin-right: 40px;
+    border-radius: 10px;
+    height: 30px;
+    width: 90px;
 }
